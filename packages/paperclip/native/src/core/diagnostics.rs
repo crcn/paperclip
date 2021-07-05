@@ -115,7 +115,7 @@ pub enum DiagnosticInfo {
   UnusedStyleRule(DiagnosticSourceInfo),
   CircularDependencyDetected(ExprSource),
   DependencyNotLoaded(ExprSource),
-  IncorectFileType(ExprSource)
+  IncorectFileType(ExprSource),
 }
 
 #[derive(Debug, PartialEq, Serialize, Clone)]

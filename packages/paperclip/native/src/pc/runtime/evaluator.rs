@@ -4,7 +4,9 @@ use super::export::{ComponentExport, Exports, Property};
 use super::virt;
 use crate::annotation::ast as annotation_ast;
 use crate::base::ast::{ExprSource, Location};
-use crate::base::runtime::Diagnostic;
+use crate::core::diagnostics::{
+  Diagnostic, DiagnosticInfo, SyntaxDiagnosticInfo, SyntaxDiagnosticInfoCode,
+};
 use crate::base::utils::{
   get_document_style_private_scope, get_document_style_public_scope, is_relative_path,
 };
